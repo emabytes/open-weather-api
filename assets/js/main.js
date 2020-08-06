@@ -1,4 +1,4 @@
-fetch("http://api.openweathermap.org/data/2.5/weather?q=Dublin&units=metric&appid=62645c4824fa2ef6fe5b46f3b4b30d52")
+fetch("https://api.openweathermap.org/data/2.5/weather?q=Dublin&units=metric&appid=62645c4824fa2ef6fe5b46f3b4b30d52")
     .then(response => response.json())
     .then((data) => {
         console.log(data)
@@ -8,7 +8,7 @@ fetch("http://api.openweathermap.org/data/2.5/weather?q=Dublin&units=metric&appi
         // console.log(description)
         let icon = data.weather[0].icon
         // console.log(icon)
-        let iconUrl = "http://openweathermap.org/img/w/" + icon + ".png";
+        let iconUrl = "https://openweathermap.org/img/w/" + icon + ".png";
         let temp = data.main.temp
         // console.log(temp)
         let tempFeelsLike = data.main.feels_like
